@@ -1,0 +1,18 @@
+{
+    "name": "SVGImporter.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:c0a1c088989086f419bc2acb0b178d8a"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

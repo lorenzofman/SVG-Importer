@@ -274,7 +274,7 @@ namespace SVGImporter
 
         }
 
-        const string assetIconPath = "Assets/Gizmos/SVGAsset icon.png";
+        const string assetIconPath = "Assets/SVG Importer/Gizmos/SVGAsset icon.png";
         void OnPreprocessTexture() {
             if(assetPath != assetIconPath)
                 return;
