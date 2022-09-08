@@ -599,19 +599,19 @@ namespace SVGImporter
                 }
             }
 
-            GUILayout.FlexibleSpace();
-            GUILayout.BeginHorizontal();
-            GUILayout.FlexibleSpace();
-            if (GUILayout.Button(new GUIContent("Report Import!")))
-            {
-                SVGReportBugWindow.titleField = "Wrong SVG file import!";
-                SVGReportBugWindow.descriptionField = "My file was incorrectly imported. I believe that the file is not corrupted.";
-                SVGReportBugWindow.problemOccurrence = SVGReportBugWindow.PROBLEM_OCCURRENCE.Always;
-                SVGReportBugWindow.problemType = SVGReportBugWindow.PROBLEM_TYPE.FileImport;
-                SVGReportBugWindow.AddSVGAttachment(asset.name, asset.svgFile);
-                SVGReportBugWindow.ShowReportBugWindow();
-            }
-            GUILayout.EndHorizontal();
+            // GUILayout.FlexibleSpace();
+            // GUILayout.BeginHorizontal();
+            // GUILayout.FlexibleSpace();
+            // if (GUILayout.Button(new GUIContent("Report Import!")))
+            // {
+            //     SVGReportBugWindow.titleField = "Wrong SVG file import!";
+            //     SVGReportBugWindow.descriptionField = "My file was incorrectly imported. I believe that the file is not corrupted.";
+            //     SVGReportBugWindow.problemOccurrence = SVGReportBugWindow.PROBLEM_OCCURRENCE.Always;
+            //     SVGReportBugWindow.problemType = SVGReportBugWindow.PROBLEM_TYPE.FileImport;
+            //     SVGReportBugWindow.AddSVGAttachment(asset.name, asset.svgFile);
+            //     SVGReportBugWindow.ShowReportBugWindow();
+            // }
+            // GUILayout.EndHorizontal();
         }
 
         protected void RecoverSVGFile(SVGAsset recoverAsset)
