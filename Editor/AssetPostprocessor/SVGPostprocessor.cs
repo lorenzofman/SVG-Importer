@@ -215,8 +215,7 @@ namespace SVGImporter
 			FieldInfo _svgFile = typeof(SVGAsset).GetField("_svgFile", BindingFlags.NonPublic | BindingFlags.Instance);
 			_svgFile.SetValue(svgAsset, svgText);
 
-            MethodInfo _editor_ApplyChanges = typeof(SVGAsset).GetMethod("_editor_ApplyChanges", BindingFlags.NonPublic | BindingFlags.Instance);
-            _editor_ApplyChanges.Invoke(svgAsset, new object[]{true});
+            svgAsset._editor_ApplyChanges(true);
         }
 
         protected static void InitDefaultValues(SVGAsset asset)

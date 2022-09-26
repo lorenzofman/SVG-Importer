@@ -1492,7 +1492,7 @@ namespace SVGImporter
             }
         }
 
-        internal void _editor_ApplyChanges(bool importMultipleFiles = false)
+        public void _editor_ApplyChanges(bool importMultipleFiles = false)
         {
             if(UnityEditor.EditorApplication.isPlayingOrWillChangePlaymode || UnityEditor.EditorApplication.isCompiling)
                 return;
